@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -136,8 +135,9 @@ class _CartScreenState extends State<CartScreen> {
                       padding: const EdgeInsets.only(bottom: 20, right: 25),
                       child: MaterialButton(
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0),
-                            side: BorderSide(color: Colors.deepPurple[400])),
+                          borderRadius: BorderRadius.circular(18.0),
+                          side: BorderSide(color: Colors.deepPurple[400]),
+                        ),
                         color: Colors.deepPurple[400],
                         minWidth: MediaQuery.of(context).size.width * 0.5,
                         height: MediaQuery.of(context).size.height * 0.06,
